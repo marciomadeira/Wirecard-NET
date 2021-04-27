@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.2</TargetFramework>
-    <Version>3.1.9</Version>
+    <Version>3.1.10</Version>
     <Authors>Wirecard, Matheus Miranda</Authors>
     <Description>Biblioteca para integração dos meios de pagamento do WIRECARD</Description>
     <Copyright>Copyright © Matheus Miranda</Copyright>
@@ -12,9 +12,9 @@
     <RepositoryUrl>https://github.com/matmiranda/Wirecard-NET.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Wirecard</PackageTags>
-    <PackageReleaseNotes>Alterado o tipo de percentual de int para float, #36</PackageReleaseNotes>
-    <AssemblyVersion>3.1.9.0</AssemblyVersion>
-    <FileVersion>3.1.9.0</FileVersion>
+    <PackageReleaseNotes>Alterado o tipo de amount em Summary para long a fim de suportar valores maiores que R$ 21.474.836,47</PackageReleaseNotes>
+    <AssemblyVersion>3.1.10.0</AssemblyVersion>
+    <FileVersion>3.1.10.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>

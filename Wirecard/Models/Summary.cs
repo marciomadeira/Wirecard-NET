@@ -7,7 +7,7 @@ namespace Wirecard.Models
         [JsonProperty("count", DefaultValueHandling = DefaultValueHandling.Ignore)]
         public int Count { get; set; }
         [JsonProperty("amount", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public int Amount { get; set; }
+        public long Amount { get; set; }
         [JsonProperty("creditSum", DefaultValueHandling = DefaultValueHandling.Ignore)]
         public int CreditSum { get; set; }
         [JsonProperty("debitSum", DefaultValueHandling = DefaultValueHandling.Ignore)]
